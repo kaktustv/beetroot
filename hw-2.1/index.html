@@ -5,16 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список покупок</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+        }
+
+        article {
+            height: 350px;
+            width: 210px;
+            margin: 0 auto;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <article>
-            <h1>Купить в Магазине</h1>
-            <ul class="">
-                <li>Продукты</li>
-                <li>Хоз. Средства</li>
-                <li>Вещи</li>
+            <h1>Список покупок</h1>
+            <ul class="square">
+                <li>Продукты
+                    <ul class="circle">
+                        <li><input type="checkbox" name="" id="ch1"><label for="ch1">Колбаса</label></li>
+                        <li><input type="checkbox" name="" id="ch2"><label for="ch2">Хлеб</label></li>
+                        <li><input type="checkbox" name="" id="ch3"><label for="ch3">Молоко</label></li>
+                        <li><input type="checkbox" name="" id="ch4"><label for="ch4">Орешки</label></li>
+                        <li><input type="checkbox" name="" id="ch5"><label for="ch5">2 помидорки</label></li>
+                        <li><input type="checkbox" name="" id="ch6"><label for="ch6">Свинина 1 кг</label></li>
+                    </ul>
+                </li>
+                <li>Хоз. Средства
+                    <ul class="circle">
+                        <li><input type="checkbox" name="" id="ch7"><label for="ch7">Мыло</label></li>
+                        <li><input type="checkbox" name="" id="ch8"><label for="ch8">Шампунь</label></li>
+                        <li><input type="checkbox" name="" id="ch9"><label for="ch9">Освежитель в.</label></li>
+                    </ul>
+                </li>
+                <li>Одежда
+                    <ul class="circle">
+                        <li><input type="checkbox" name="" id="ch10"><label for="ch10">Футболка</label></li>
+                        <li><input type="checkbox" name="" id="ch11"><label for="ch11">Носки</label></li>
+                    </ul>
+                </li>
             </ul>
         </article>
     </main>
