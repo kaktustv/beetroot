@@ -50,7 +50,7 @@ figure img {
 }
 
 .left-menu {
-    width: 20%;
+    width: 23%;
     float: left;
 
     background: #7D0909;
@@ -67,13 +67,43 @@ figure img {
 }
 
 .page {
-    width: 70%;
+    width: 60%;
 
     float: left;
 
     text-align: left;
+    margin: 0 1%;
 }
 
 .page aside {
     margin: 10px 0;
+}
+
+.right-menu {
+    width: 15%;
+    height: 310px;
+
+    text-align: left;
+    float: left;
+    color: black;
+    background: #E3DDDD;
+}
+
+.title {
+    background: #BDBDBD;
+
+    text-align: center;
+}
+
+.g-line-two {
+    width: 50%;
+    height: 2px;
+    background: #9A9A9A;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.element {
+    padding: 10px 0;
 }
