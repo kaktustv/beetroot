@@ -40,12 +40,26 @@ header {
 }
 
 figure {
-    height: 160px;
     float: left;
     width: 25%;
-    margin: 25px 0;
+    margin: 25px 0 0;
 }
 
 figure img {
     height: 110px;
+}
+
+.left-menu {
+    width: 20%;
+
+    background: #7D0909;
+}
+
+.left-menu a {
+    color: #E95B0E;
+    text-decoration: none;
+}
+
+.left-menu ul li {
+    padding: 5px;
 }
