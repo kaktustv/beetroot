@@ -51,23 +51,26 @@ figure img {
 
 .left-menu {
     width: 23%;
+    height: 310px;
+
     float: left;
+    text-align: left;
 
     background: #7D0909;
 }
 
 .left-menu a {
     color: #E95B0E;
-    text-decoration: none;
 }
 
 .left-menu ul li {
-    padding: 5px;
+    padding: 10px;
     list-style-type: none;
 }
 
 .page {
     width: 60%;
+    height: 310px;
 
     float: left;
 
@@ -106,4 +109,13 @@ figure img {
 
 .element {
     padding: 10px 0;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+
+    background: #E95B11;
+    float: left;
 }
