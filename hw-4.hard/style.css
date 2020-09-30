@@ -113,9 +113,10 @@ figure img {
 
 footer {
     width: 100%;
-    height: 20px;
+    height: auto;
     margin-top: 15px;
 
     background: #E95B11;
     float: left;
+    font-size: 20px;
 }
