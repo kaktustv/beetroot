@@ -51,6 +51,7 @@ figure img {
 
 .left-menu {
     width: 20%;
+    float: left;
 
     background: #7D0909;
 }
@@ -62,4 +63,17 @@ figure img {
 
 .left-menu ul li {
     padding: 5px;
+    list-style-type: none;
+}
+
+.page {
+    width: 70%;
+
+    float: left;
+
+    text-align: left;
+}
+
+.page aside {
+    margin: 10px 0;
 }
