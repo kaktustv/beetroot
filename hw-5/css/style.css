@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,33 @@ footer {
 .logo {
     width: 112px;
     margin: 0 auto;
-
+    margin-bottom: 51px;
 }
 
 .logo img {
     margin-top: 120px;
+}
+
+.social-part-txt {
+    width: 158px;
+    height: 14px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "WE ARE SOC" */
+    letter-spacing: 1px;
+}
+
+.social-part {
+    margin-bottom: 21px;
+}
+
+.separator {
+    width: 230px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #ffffff;
 }
