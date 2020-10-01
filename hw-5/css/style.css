@@ -44,6 +44,7 @@ footer {
     height: 1px;
     margin: 0 auto;
     background-color: #ffffff;
+    margin-bottom: 21px;
 }
 
 .social-part-img {
@@ -55,7 +56,7 @@ footer {
 
 .social-part-img ul li {
     display: inline-block;
-    padding: 21px 17px 0 17px;
+    padding: 0 17px 0 17px;
 }
 
 .copyright {
