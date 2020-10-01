@@ -8,7 +8,7 @@
 
 footer {
     width: auto;
-    height: 420px;
+    height: 430px;
     background: #121116;
 }
 
@@ -24,7 +24,6 @@ footer {
 
 .social-part-txt {
     width: 158px;
-    height: 14px;
     margin: 0 auto;
     color: #ffffff;
     font-family: "Open Sans";
@@ -36,7 +35,9 @@ footer {
     margin-bottom: 21px;
 }
 
-.social-part {}
+.social-part {
+    margin-bottom: 86px;
+}
 
 .separator {
     width: 230px;
@@ -50,11 +51,22 @@ footer {
 
     margin: 0 auto;
     text-align: center;
-    ;
 }
 
 .social-part-img ul li {
     display: inline-block;
-    padding: 21px 17px;
+    padding: 21px 17px 0 17px;
+}
 
+.copyright {
+    width: 100%;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.copyright span {
+    color: #00c7fc;
 }
