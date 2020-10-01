@@ -8,7 +8,7 @@
 
 footer {
     width: auto;
-    height: 430px;
+    height: 440px;
     background: #121116;
 }
 
@@ -16,11 +16,9 @@ footer {
     width: 112px;
     margin: 0 auto;
     margin-bottom: 51px;
+    padding-top: 120px;
 }
 
-.logo img {
-    margin-top: 120px;
-}
 
 .social-part-txt {
     width: 158px;
@@ -44,7 +42,7 @@ footer {
     height: 1px;
     margin: 0 auto;
     background-color: #ffffff;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 .social-part-img {
