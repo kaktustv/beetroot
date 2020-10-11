@@ -10,8 +10,7 @@
 :root {
     --WHITE: white;
     --GRAY: #9d9d9d;
-    --BLUE: #1275b9;
-    --SVG-BLUE: #2a69a6;
+    --BLUE: #2a69a6;
     --FONT-FAMILY: 'Proxima', sans-serif;
 }
 
@@ -52,15 +51,24 @@
     border-radius: 50%;
 }
 
-.services-block__item-svg:hover{
+.services-block__item-svg {
+    transition: 0.3s;
+}
+
+.services-block__item-svg:hover {
     background-color: var(--WHITE);
 }
 
-.services-block__item-svg img{
-    width: 30px;
+.services-block__item-svg:hover svg g {
+    fill: var(--BLUE);
 }
-.services-block__item-svg:hover svg g{
-    fill: red;
+
+.services-block__item-svg svg {
+    height: 30px;
+}
+
+.services-block__item-svg svg g {
+    transition: 0.3s;
 }
 
 .services-block__item-title {
