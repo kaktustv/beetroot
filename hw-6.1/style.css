@@ -1,8 +1,16 @@
+
 @font-face {
-    font-family: 'Proxima';
-    src: url('ProximaNova-Bold.woff2') format('woff2'),
-        url('ProximaNova-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Proxima-l';
+    src: url('ProximaNova-Light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima-reg';
+    src: url('ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -11,7 +19,8 @@
     --WHITE: white;
     --GRAY: #9d9d9d;
     --BLUE: #2a69a6;
-    --FONT-FAMILY: 'Proxima', sans-serif;
+    --FONT-FAMILY-R: 'Proxima-reg', sans-serif;
+    --FONT-FAMILY-L: 'Proxima-l', sans-serif;
 }
 
 * {
@@ -32,7 +41,7 @@
     width: 220px;
 
     text-align: center;
-    font-family: var(--FONT-FAMILY);
+    font-family: var(--FONT-FAMILY-L);
     font-size: 14px;
 }
 
@@ -58,22 +67,11 @@
 .services-block__item-svg:hover {
     background-color: var(--WHITE);
 }
-
-.services-block__item-svg:hover svg g {
-    fill: var(--BLUE);
-}
-
-.services-block__item-svg svg {
-    height: 30px;
-}
-
-.services-block__item-svg svg g {
-    transition: 0.3s;
-}
-
-.services-block__item-title {
+.services-block__item-title h1{
     text-transform: uppercase;
     padding-bottom: 20px;
+    font-size: 14px;
+    font-family: var(--FONT-FAMILY-R);
 }
 
 .services-block__item-subtitle {
@@ -86,4 +84,11 @@
 
 .services-block:nth-child(2) {
     margin-right: 100px;
+}
+.svg-a{
+    transition: 0.3s;
+    fill: white;
+}
+.svg-a:hover{
+    fill: #2a69a6;
 }
