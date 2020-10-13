@@ -1,0 +1,12 @@
+.footer{
+    @include flex-col(column,flex-start,center,);
+    &-container{
+        background-color: $GREY;
+        width: 800px;
+        padding: 25px 0;
+        text-align: center;
+        .footer__txt{
+            @include text($H25, 400, $COLOR-FONT-1)
+        }
+    }
+}

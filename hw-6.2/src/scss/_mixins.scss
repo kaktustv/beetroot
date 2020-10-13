@@ -4,9 +4,9 @@
   color: $font-color;
 }
 @mixin flex-col(
+  $direction: column,
   $jc: flex-start,
   $ai: stretch,
-  $direction: column,
   $wrap: nowrap
 ) {
   display: flex;

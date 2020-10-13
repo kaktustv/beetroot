@@ -4,14 +4,15 @@
   min-width: 100%;
   background-color: $GREY;
   color: $COLOR-FONT-1;
-  @include flex-col(center, center);
+  @include flex-col(column, center, center);
   padding: 20px 0px;
   &__title {
     font-size: $H30;
     font-family: $base-font;
     font-weight: bolder;
+    padding-bottom: 5px;
   }
   &__subtitle {
-    font-size: $H20;
+    font-size: $H25;
   }
 }

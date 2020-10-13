@@ -1,14 +1,52 @@
 $SHOP-I: shopping-item;
 .#{$SHOP-I} {
-  padding: 5px;
-  @include flex-col($ai: center, $direction: row);
+  width: 100%;
+  padding: 20px;
+  @include flex-col(row, flex-start, center);
+  border-top: 5px transparent solid;
+  border-bottom: 5px transparent solid;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: border-color;
 
+  &:hover{
+    background-color: #625E77;
+    border-color: $WHITE;
+
+  }
+  &:active{
+    background-color: $ACTIVE;
+  }
   &__input {
     @include size(25px);
+    margin-right: 20px;
+    &:checked + .#{$SHOP-I}__content{
+      text-decoration: line-through;
+      color: $COLOR-ITEM-ST;
+      .#{$SHOP-I}__title{
+        color: $COLOR-ITEM-ST;
+      }
+    }
   }
-  &__content {
+  &__content{
+    @include flex-col(flex-start, baseline);
+  }
+  &__content:checked {
+    text-transform: inherit;
   }
   &__title {
-    @include text($H20, 400, $COLOR-ITEM-T);
+    @include text($H25, 400, $COLOR-ITEM-T);
+  }
+  &__subtitle {
+    @include text($H14, 400, $COLOR-ITEM-ST);
+    position: relative;
+    top: 7px;
+  }
+  &__subtitle::before{
+    content: '(';
+  }
+  &__subtitle::after{
+    content: ')';
   }
 }
+
