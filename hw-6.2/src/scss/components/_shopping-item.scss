@@ -1,0 +1,14 @@
+$SHOP-I: shopping-item;
+.#{$SHOP-I} {
+  padding: 5px;
+  @include flex-col($ai: center, $direction: row);
+
+  &__input {
+    @include size(25px);
+  }
+  &__content {
+  }
+  &__title {
+    @include text($H20, 400, $COLOR-ITEM-T);
+  }
+}

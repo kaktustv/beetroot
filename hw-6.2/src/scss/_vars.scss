@@ -3,6 +3,9 @@
 $GREY: #4a4f56;
 $BG-GREY: #3b3f45;
 $COLOR-FONT-1: #eb7e7f;
+$COLOR-ODD: #88839e;
+$COLOR-EVEN: #7a7593;
+$COLOR-ITEM-T: #f6f2ed;
 
 // Fonts
 $base-font: "Trebuchet MS", Trebuchet, Arial, sans-serif;
@@ -14,7 +17,7 @@ $base-font-size: 16px;
   @return #{$remSize}rem;
 }
 
-$H30: calcRem(30px); // 1.5rem
+$H30: calcRem(30px);
 $H20: calcRem(20px);
 $H18: calcRem(18px);
 $H14: calcRem(14px);

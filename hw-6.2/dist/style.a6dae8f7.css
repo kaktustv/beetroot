@@ -40,5 +40,29 @@ body {
 .shopping-list {
   list-style-type: none;
 }
+.shopping-list__item:nth-child(odd) {
+  background-color: #88839e;
+}
+.shopping-list__item:nth-child(even) {
+  background-color: #7a7593;
+}
+
+.shopping-item {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.shopping-item__input {
+  width: 25px;
+  height: 25px;
+}
+.shopping-item__title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #f6f2ed;
+}
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
