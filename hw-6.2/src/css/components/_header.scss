@@ -1,0 +1,13 @@
+// $GREY: #4A4F56;
+
+.header {
+  min-width: 100vh;
+  background-color: $GREY;
+  color: $COLOR-FONT-1;
+  @include flex();
+  &__title {
+    font-size: $H24;
+    font-family: $base-font;
+    font-weight: bolder;
+  }
+}

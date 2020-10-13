@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  background-color: #4a4f56;
+  min-height: 100vh;
+  border: 15px solid white;
+}
+
+.header {
+  min-width: 100vh;
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.header__title {
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=/style.6b54f5b7.css.map */
