@@ -16,7 +16,6 @@
   flex-wrap: $wrap;
 }
 
-
 @mixin flex($direction: row, $jc: flex-start, $ai: stretch, $wrap: nowrap) {
   display: flex;
   flex-direction: $direction;

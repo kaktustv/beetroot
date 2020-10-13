@@ -7,25 +7,29 @@
 body {
   font-size: 16px;
   font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
-  background-color: #4a4f56;
+  background-color: #3b3f45;
   min-height: 100vh;
   border: 15px solid white;
 }
 
 .header {
-  min-width: 100vh;
+  min-width: 100%;
   background-color: #4a4f56;
   color: #eb7e7f;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
+  padding: 20px 0px;
 }
 .header__title {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
   font-weight: bolder;
 }
+.header__subtitle {
+  font-size: 1.25rem;
+}
 
-/*# sourceMappingURL=/style.6b54f5b7.css.map */
+/*# sourceMappingURL=/style.a6dae8f7.css.map */

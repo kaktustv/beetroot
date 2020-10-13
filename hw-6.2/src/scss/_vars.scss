@@ -1,6 +1,7 @@
 //COLORS
 
 $GREY: #4a4f56;
+$BG-GREY: #3b3f45;
 $COLOR-FONT-1: #eb7e7f;
 
 // Fonts
@@ -13,7 +14,7 @@ $base-font-size: 16px;
   @return #{$remSize}rem;
 }
 
-$H24: calcRem(24px); // 1.5rem
+$H30: calcRem(30px); // 1.5rem
 $H20: calcRem(20px);
 $H18: calcRem(18px);
 $H14: calcRem(14px);
