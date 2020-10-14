@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: 'Proxima-l';
+    src: url('ProximaNova-Light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima-reg';
+    src: url('ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --WHITE: white;
+    --GRAY: #9d9d9d;
+    --BLUE: #2a69a6;
+    --FONT-FAMILY-R: 'Proxima-reg', sans-serif;
+    --FONT-FAMILY-L: 'Proxima-l', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.services {
+    padding-top: 55px;
+
+    background-color: var(--WHITE);
+    display: flex;
+    justify-content: center;
+}
+
+.services-block {
+    width: 220px;
+
+    text-align: center;
+    font-family: var(--FONT-FAMILY-L);
+    font-size: 14px;
+}
+
+.services-block__item-svg {
+    width: 63px;
+    height: 63px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--BLUE);
+    border: 2px var(--BLUE) solid;
+    border-radius: 50%;
+}
+
+.services-block__item-svg {
+    transition: 0.3s;
+}
+
+.services-block__item-svg:hover {
+    background-color: var(--WHITE);
+}
+.services-block__item-title h1{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-family: var(--FONT-FAMILY-R);
+}
+
+.services-block__item-subtitle {
+    color: var(--GRAY);
+}
+
+.services-block:nth-child(1) {
+    margin-right: 100px;
+}
+
+.services-block:nth-child(2) {
+    margin-right: 100px;
+}
+.svg-a{
+    transition: 0.3s;
+    fill: white;
+}
+.svg-a:hover{
+    fill: #2a69a6;
+}
