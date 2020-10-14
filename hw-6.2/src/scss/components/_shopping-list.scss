@@ -1,0 +1,11 @@
+.shopping-list {
+  list-style-type: none;
+  min-width: 800px;
+
+  &__item:nth-child(odd) {
+    background-color: $COLOR-ODD;
+  }
+  &__item:nth-child(even) {
+    background-color: $COLOR-EVEN;
+  }
+}

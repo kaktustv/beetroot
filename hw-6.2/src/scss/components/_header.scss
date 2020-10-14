@@ -1,0 +1,18 @@
+// $GREY: #4A4F56;
+
+.header {
+  min-width: 100%;
+  background-color: $GREY;
+  color: $COLOR-FONT-1;
+  @include flex-col(column, center, center);
+  padding: 20px 0px;
+  &__title {
+    font-size: $H30;
+    font-family: $base-font;
+    font-weight: bolder;
+    padding-bottom: 5px;
+  }
+  &__subtitle {
+    font-size: $H25;
+  }
+}
