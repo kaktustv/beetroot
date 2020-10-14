@@ -1,0 +1,24 @@
+// COLOR
+
+$BLACK: #171717;
+$GOLD: #eaa258;
+$WHITE: #ffffff;
+
+//FONT
+
+$LATO-F: 'Lato', sans-serif;
+$PLAY-F: 'Playfair Display', serif;
+$base-font-size:16px;
+
+//FONT-SIZE
+
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+  }
+
+$H110: calcRem(110px);
+$H60: calcRem(60px);
+$H42: calcRem(42px);
+$H24: calcRem(24px);
+$H18: calcRem(18px);

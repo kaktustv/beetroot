@@ -1,0 +1,21 @@
+@mixin flex ($direction:row, $jc:flex-start, $ai: flex-start, $wrap: nowrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $wrap;
+}
+@mixin flex-col ($direction:column, $jc:flex-start, $ai: flex-start, $wrap: nowrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $wrap;
+}
+@mixin txt ($font-size: $base-font-size, $font-weight: 400, $font-color: $BLACK, $font-family: $LATO-F, $font-style: normal){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color: $font-color;
+    font-style: $font-style;
+}

@@ -1,0 +1,45 @@
+.main-item{
+    padding: 140px 129px 120px 129px ;
+    &__title{
+        @include txt ($H42, 400, $BLACK, $PLAY-F);
+        margin-bottom: 40px;
+    }
+    .opacity{
+        opacity: 0.7;
+    }
+    &__button{
+        width: 260px;
+        height: 70px;
+        margin-top: 40px;
+        @include txt (H18, 700, $GOLD, $LATO-F);
+        border: 2px solid $GOLD;
+        text-transform: uppercase;
+        letter-spacing: 3.6px;
+    }
+    &__subtitle{
+        @include txt ($H18, 300, $BLACK, $LATO-F);
+        display: inline;
+        &-opacity{
+            opacity: 0.7;
+        }
+        &-txt-t{
+            @include txt ($H110, 400, $BLACK, $PLAY-F);
+            display: inline;
+        }
+        &-quotes{
+            @include txt ($H60, 300, $BLACK, $LATO-F);
+        }
+        &-italic{
+            @include txt ($H24, 300, $BLACK, $LATO-F, italic);
+        }
+        &-txt{
+            display: inline-block;
+            padding: 40px 0 0 0;
+        }
+        &-img{
+            height: 110px;
+            padding: 7px 30px 20px 0;
+            float: left;
+        }
+    }
+}

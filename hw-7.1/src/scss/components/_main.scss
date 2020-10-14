@@ -1,0 +1,7 @@
+.main{
+    margin: 132px;
+    width: 1400px;
+    box-shadow: 0 4px 68px rgba(0, 0, 0, 0.1);
+    background-color: var(--WHITE);
+    @include flex-col (column, flex-start, center, nowrap)
+}

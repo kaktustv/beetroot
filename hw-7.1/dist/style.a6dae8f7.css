@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  color: #171717;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.125rem;
+}
+
+.main {
+  margin: 132px;
+  width: 1400px;
+  box-shadow: 0 4px 68px rgba(0, 0, 0, 0.1);
+  background-color: var(--WHITE);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.main-item {
+  padding: 140px 129px 120px 129px;
+}
+.main-item__title {
+  font-size: 2.625rem;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  color: #171717;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+.main-item .opacity {
+  opacity: 0.7;
+}
+.main-item__button {
+  width: 260px;
+  height: 70px;
+  margin-top: 40px;
+  font-size: H18;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #eaa258;
+  font-style: normal;
+  border: 2px solid #eaa258;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.main-item__subtitle {
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  color: #171717;
+  font-style: normal;
+  display: inline;
+}
+.main-item__subtitle-opacity {
+  opacity: 0.7;
+}
+.main-item__subtitle-txt-t {
+  font-size: 6.875rem;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  color: #171717;
+  font-style: normal;
+  display: inline;
+}
+.main-item__subtitle-quotes {
+  font-size: 3.75rem;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  color: #171717;
+  font-style: normal;
+}
+.main-item__subtitle-italic {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  color: #171717;
+  font-style: italic;
+}
+.main-item__subtitle-txt {
+  display: inline-block;
+  padding: 40px 0 0 0;
+}
+.main-item__subtitle-img {
+  height: 110px;
+  padding: 7px 30px 20px 0;
+  float: left;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */

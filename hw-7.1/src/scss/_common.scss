@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include flex(row, center, center, nowrap);
+}
+button {
+  background-color: $WHITE;
+  border: none;
+  color: $BLACK;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $H18;
+}
