@@ -39,6 +39,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #464f54;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -47,15 +51,24 @@
   justify-content: center;
   align-items: flex-end;
   flex-wrap: nowrap;
+  position: relative;
+  top: 40px;
   background-color: #464f54;
 }
 .main__block {
   width: 1060px;
   height: auto;
-  padding: 200px 125px 0 125px;
+  padding: 0px 125px 0 67px;
   bottom: 0;
   background-color: white;
   text-transform: uppercase;
+}
+.main__border {
+  width: auto;
+  height: auto;
+  padding-left: 58px;
+  border-left: 3px solid #e8eced;
+  padding-top: 200px;
 }
 
 .main-block__name {
@@ -64,17 +77,92 @@
   font-family: "Proxima Nova Rg", sans-serif;
   color: black;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   opacity: 0.4;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .main-block__title {
   font-size: 4.8125rem;
   font-weight: 500;
   font-family: "Futura PT", sans-serif;
   color: black;
-  padding-bottom: 25px;
+  padding-bottom: 8px;
   opacity: 0.8;
+}
+.main-block__subtitle {
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-family: "Georgia Italic", sans-serif;
+  color: black;
+  text-transform: none;
+  opacity: 0.5;
+  padding-bottom: 32px;
+}
+.main-block__text-items {
+  text-transform: none;
+  font-size: 1.6875rem;
+  font-weight: 400;
+  font-family: "Georgia", sans-serif;
+  color: black;
+  padding-bottom: 39px;
+}
+.main-block-text__item {
+  display: inline-block;
+  padding-bottom: 39px;
+  line-height: 1.6;
+}
+.main-block-text__italic {
+  font-style: italic;
+}
+
+.main__header {
+  position: relative;
+  top: -300px;
+  right: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+.main__header .main-header__title {
+  width: 880px;
+  height: auto;
+  background-color: #181818;
+  padding: 50px 0 50px 63px;
+}
+.main__header .main-header__title-txt {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: "Proxima Nova Rg", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  letter-spacing: 5px;
+  padding-bottom: 13px;
+  opacity: 0.5;
+}
+.main__header .main-header__title-input {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Playfair Display", sans-serif;
+  color: white;
+  background-color: #181818;
+  border: none;
+  padding-bottom: 21px;
+  border-bottom: 4px solid #ffffff10;
+}
+.main__header .main-header__title-input::placeholder {
+  color: white;
+}
+.main__header .main-header__control {
+  width: 812px;
+  height: 50px;
+  background-color: #fbc02d;
+  float: right;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
