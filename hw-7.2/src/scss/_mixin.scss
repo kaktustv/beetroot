@@ -1,0 +1,24 @@
+@mixin txt(
+  $font-size: $h16,
+  $font-weight: 400,
+  $font-family: sans-serif,
+  $font-color: $black
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-family: $font-family;
+  color: $font-color;
+}
+
+@mixin flex($direction: row, $jc: flex-start, $ai: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: $wrap;
+}
+
+@mixin size($size-w, $size-h) {
+  width: $size-w;
+  height: $size-h;
+}

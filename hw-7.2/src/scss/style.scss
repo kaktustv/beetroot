@@ -1,1 +1,7 @@
-@import ".././fonts/stylesheet.scss"
+@import "./fonts";
+@import "./vars";
+@import "./mixin";
+@import "./common";
+
+@import "./components/main";
+@import "./components/main-block";

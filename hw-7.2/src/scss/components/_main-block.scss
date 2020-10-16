@@ -1,0 +1,14 @@
+.main-block {
+  &__name {
+    @include txt($h20, 400, $f-proxima, $black);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0.4;
+    padding-bottom: 50px;
+  }
+  &__title {
+    @include txt($h77, 500, $f-futura, $black);
+    padding-bottom: 25px;
+    opacity: 0.8;
+  }
+}

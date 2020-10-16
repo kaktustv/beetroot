@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("/Georgia.a4eab783.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("/FuturaPT-Heavy.c0ad490b.woff2") format("woff2"), url("/FuturaPT-Heavy.113605b8.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("/ProximaNova-Regular.c1fafe9b.woff2") format("woff2"), url("/ProximaNova-Regular.03028eba.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Georgia Italic";
+  src: url("/Georgia-Italic.44c2690c.woff2") format("woff2"), url("/Georgia-Italic.82919805.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/PlayfairDisplay-Regular.63782f5f.woff2") format("woff2"), url("/PlayfairDisplay-Regular.81af4085.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  background-color: #464f54;
+}
+.main__block {
+  width: 1060px;
+  height: auto;
+  padding: 200px 125px 0 125px;
+  bottom: 0;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.main-block__name {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Proxima Nova Rg", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 0.4;
+  padding-bottom: 50px;
+}
+.main-block__title {
+  font-size: 4.8125rem;
+  font-weight: 500;
+  font-family: "Futura PT", sans-serif;
+  color: black;
+  padding-bottom: 25px;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
