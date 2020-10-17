@@ -1,22 +1,24 @@
 .main {
   @include size(100%, 100vh);
-  @include flex(row, center, flex-end);
   position: relative;
   top: 40px;
   background-color: $bg-color;
   &__block {
     @include size(1060px, auto);
+    @include flex(column, row);
     padding: 0px 125px 0 67px;
- 
+
     bottom: 0;
     background-color: $white;
     text-transform: uppercase;
   }
-  &__border{
+  &__border {
     @include size(auto, auto);
     padding-left: 58px;
     border-left: 3px solid $left-border-color;
     padding-top: 200px;
-
   }
+}
+.container {
+  @include flex(row, center, flex-start, nowrap);
 }

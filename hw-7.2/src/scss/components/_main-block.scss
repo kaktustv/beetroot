@@ -1,34 +1,22 @@
 .main-block {
-  
   &__name {
     @include txt($h20, 400, $f-proxima, $black);
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     opacity: 0.4;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   &__title {
     @include txt($h77, 500, $f-futura, $black);
-    padding-bottom: 8px;
+    padding-bottom: 25px;
     opacity: 0.8;
   }
-  &__subtitle{
-    @include txt($h30, 400, $f-georgia-italic, $black);
-    text-transform: none;
-    opacity: 0.5;
-    padding-bottom: 32px;
+  &__subtitle {
+    @include txt($h30, 500, $f-futura, $black);
   }
-  &__text-items{
+  &__text-items {
     text-transform: none;
     @include txt($h27, 400, $f-georgia, $black);
     padding-bottom: 39px;
-  }
-  &-text__item{
-    display: inline-block;
-    padding-bottom: 39px;
-    line-height: 1.6;
-  }
-  &-text__italic{
-    font-style: italic;
   }
 }

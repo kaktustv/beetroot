@@ -1,35 +1,54 @@
-.main__header{
-    position: relative;
-    top: -300px;
-    right: -200px;
-    @include flex(column, flex-end, flex-end, nowrap);
-    .main-header__title{
-        @include size(880px, auto);
+.main__header {
+  position: relative;
+  top: 200px;
+  @include flex(column, flex-end, flex-end, nowrap);
+  .main-header__title {
+    @include size(880px, auto);
 
-        background-color: $light-black;
-        padding: 50px 0 50px 63px;
+    background-color: $light-black;
+    padding: 50px 0 50px 63px;
 
-        &-txt{
-            @include txt ($h15, 400, $f-proxima, $white);
-            @include flex(column, flex-end, stretch, nowrap);
-            letter-spacing: 5px;
-            padding-bottom: 13px;
-            opacity: 0.5;
-        }
-        &-input{
-            @include txt($h48, 400, $f-playfair, $white);
-            background-color: $light-black;
-            border: none;
-            padding-bottom: 21px;
-            border-bottom: 4px solid #ffffff10;
-        }
-        &-input::placeholder{
-            color: $white;
-        }
+    &-txt {
+      @include txt($h15, 400, $f-proxima, $white);
+      @include flex(column, flex-end, stretch, nowrap);
+      letter-spacing: 5px;
+      padding-bottom: 13px;
+      opacity: 0.5;
     }
-    .main-header__control{
-        @include size(812px, 50px);
-        background-color: $yellow;
-        float: right;
+    &-input {
+      @include txt($h48, 400, $f-playfair, $white);
+      background-color: $light-black;
+      border: none;
+      padding-bottom: 21px;
+      border-bottom: 4px solid #ffffff10;
     }
+    &-input::placeholder {
+      color: $white;
+    }
+  }
+  .main-header__control {
+    @include size(812px, auto);
+    background-color: $yellow;
+    float: right;
+    padding-left: 20px;
+    &-btn {
+      border: none;
+      background-color: $yellow;
+      outline: none;
+      &:hover + .main-header__control-svg {
+        fill: brown;
+      }
+    }
+    &-ul {
+      @include flex(row, flex-start, center, nowrap);
+      list-style-type: none;
+    }
+    &-li {
+      @include flex(row, center, center, nowrap);
+    }
+    &-img {
+      height: 30px;
+      margin: 24px 14px;
+    }
+  }
 }

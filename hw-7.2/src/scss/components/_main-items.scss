@@ -1,0 +1,10 @@
+.maim-block-text {
+  &__item {
+    display: inline-block;
+    padding-bottom: 39px;
+    line-height: 1.6;
+  }
+  &__italic {
+    font-style: italic;
+  }
+}
