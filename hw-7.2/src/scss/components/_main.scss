@@ -10,7 +10,6 @@
 
     bottom: 0;
     background-color: $white;
-    text-transform: uppercase;
   }
   &__border {
     @include size(auto, auto);
@@ -18,7 +17,12 @@
     border-left: 3px solid $left-border-color;
     padding-top: 200px;
   }
+  &__container{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .container {
-  @include flex(row, center, flex-start, nowrap);
+  @include flex(row, center, flex-end, nowrap);
 }
+

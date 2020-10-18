@@ -17,6 +17,7 @@
     }
     &-input {
       @include txt($h48, 400, $f-playfair, $white);
+      width: 100%;
       background-color: $light-black;
       border: none;
       padding-bottom: 21px;
@@ -47,7 +48,7 @@
       @include flex(row, center, center, nowrap);
     }
     &-img {
-      height: 30px;
+      width: 40px;
       margin: 24px 14px;
     }
   }

@@ -4,15 +4,19 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     opacity: 0.4;
-    padding-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 25px;
   }
   &__title {
     @include txt($h77, 500, $f-futura, $black);
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     opacity: 0.8;
   }
   &__subtitle {
-    @include txt($h30, 500, $f-futura, $black);
+    @include txt($h30, $f-georgia-italic , $black);
+    font-style: italic;
+    padding-bottom: 55px;
+    opacity: 0.5;
   }
   &__text-items {
     text-transform: none;
