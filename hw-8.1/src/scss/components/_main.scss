@@ -1,0 +1,5 @@
+.main{
+    background-color: $bg-color;
+    @include size(100%, 100vh);
+    @include flex(row, center, center, nowrap);
+}
