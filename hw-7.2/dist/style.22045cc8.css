@@ -1,34 +1,34 @@
 @font-face {
   font-family: "Georgia";
-  src: url("/Georgia.a4eab783.woff") format("woff");
+  src: url("Georgia.f842eeb2.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("/FuturaPT-Heavy.c0ad490b.woff2") format("woff2"), url("/FuturaPT-Heavy.113605b8.woff") format("woff");
+  src: url("FuturaPT-Heavy.287e5352.woff2") format("woff2"), url("FuturaPT-Heavy.714faa3f.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Proxima Nova Rg";
-  src: url("/ProximaNova-Regular.c1fafe9b.woff2") format("woff2"), url("/ProximaNova-Regular.03028eba.woff") format("woff");
+  src: url("ProximaNova-Regular.cffb3102.woff2") format("woff2"), url("ProximaNova-Regular.f807ff34.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Georgia Italic  ";
-  src: url("/Georgia-Italic.44c2690c.woff2") format("woff2"), url("/Georgia-Italic.82919805.woff") format("woff");
+  src: url("Georgia-Italic.1ea501c5.woff2") format("woff2"), url("Georgia-Italic.21a9e307.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("/PlayfairDisplay-Regular.63782f5f.woff2") format("woff2"), url("/PlayfairDisplay-Regular.81af4085.woff") format("woff");
+  src: url("PlayfairDisplay-Regular.8761b6ab.woff2") format("woff2"), url("PlayfairDisplay-Regular.963cfcf1.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -209,5 +209,3 @@ body {
 .main-block-text__italic {
   font-style: italic;
 }
-
-/*# sourceMappingURL=/style.a6dae8f7.css.map */
