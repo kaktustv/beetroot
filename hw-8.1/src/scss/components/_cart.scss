@@ -1,0 +1,53 @@
+.cart {
+  @include size(360px, 493px);
+  @include flex(row, center, center, nowrap);
+  padding: 0 0;
+  background-color: $white;
+  border-radius: 3px;
+  margin: 0 30px;
+  box-shadow: 0 1px 3px 0.01px lighten($color: $txt-black, $amount: 50);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  &:hover {
+    @include size(390px, 523px);
+    margin: 0 15px;
+  }
+  &__items {
+    @include flex(column, flex-start, center, nowrap);
+    .cart-item {
+      &__title {
+        @include text($h70, 700, $f-miso-bold, $txt-green);
+        @include size(auto, 53px);
+        margin-bottom: 80px;
+        text-align: center;
+      }
+      &__smoke {
+        margin-bottom: 10px;
+      }
+      &__cup {
+        @include flex(row, center, center, nowrap);
+        position: relative;
+        left: 10px;
+        margin-bottom: 18px;
+      }
+      &__bean {
+        position: absolute;
+        left: 40px;
+        top: 15px;
+      }
+      &__subtitle {
+        @include text($h56, 400, $f-miso, $txt-black);
+        margin-top: -20px;
+      }
+      &__description {
+        @include text($h20, 300, $f-lato, $txt-black);
+        @include size(156px, auto);
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
