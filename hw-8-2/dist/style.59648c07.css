@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Hans Kendrick";
+  src: url("HansKendrick-Regular.bc31f210.woff2") format("woff2"), url("HansKendrick-Regular.a7845269.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e7ec;
+  padding: 91px 240px 0 240px;
+  font-family: "Hans Kendrick", sans-serif;
+}
+
+.avatar {
+  align-self: flex-start;
+  padding: 56px 0px 25px 27px;
+}
+
+.banner {
+  width: auto;
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.banner__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.banner__inner {
+  width: 483px;
+  z-index: 1;
+  padding: 0 0 40px 43px;
+}
+.banner__inner-date {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.banner__inner-title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+
+.card {
+  position: relative;
+  background-color: #ffffff;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+}
+.card__text-wrapper {
+  padding: 27px 27px 0px 27px;
+}
+.card__text-wrapper-date {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #818181;
+}
+.card__text-wrapper-title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 13px;
+}
+.card__avatar {
+  position: relative;
+  bottom: 0;
+}
+
+.grid {
+  margin: 0 -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 1190px;
+  margin-bottom: 87px;
+}
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10px 20px 10px;
+  position: relative;
+}
+.grid__item--large {
+  width: calc(66.6% - 40px);
+  margin: 0 10px 20px 10px;
+}
+
+.card {
+  width: calc(33.3% - 30px);
+}
+
+.load-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 90px;
+}
+.load-content__image {
+  margin-right: 13px;
+}
+.load-content__title {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: #99a5b0;
+}
