@@ -1,0 +1,21 @@
+//color
+$san-francisco: #cc6699;
+$new-york: #99cc99;
+$paris: #33cccc;
+$cair: #ffcc66;
+$tokyo: #339966;
+$sydney: #666699;
+$new-delhi: #669999;
+$belgrade: #996699;
+$lisbon: #3399cc;
+$border-color: #2b81ac;
+$moscow: #c24747;
+$tel-aviv: #e2674a;
+
+//font
+
+//font-size
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+  }
