@@ -1,0 +1,36 @@
+.main {
+  &__container {
+    @include size(1000px, auto);
+    margin: 0 auto;
+  }
+  &__items {
+    border: 2px solid $white;
+    list-style: none;
+    font-size: 0;
+  }
+  &__item {
+    padding: 30px 0;
+    text-align: center;
+    border: 2px solid $white;
+    display: inline-block;
+    &-title {
+      width: 100%;
+      display: block;
+      @include text($h20, 400, $f-licida, $white);
+    }
+    &-temperature {
+      width: 100%;
+      display: block;
+      @include text($h20, 400, $f-licida, $white);
+    }
+    &-1-1 {
+      width: 100%;
+    }
+    &-1-2 {
+      width: 50%;
+    }
+    &-1-4 {
+      width: 25%;
+    }
+  }
+}

@@ -1,6 +1,12 @@
-@mixin text($font-size: $H18, $font-weight: 500, $font-color: $WHITE) {
+@mixin text(
+  $font-size: $H18,
+  $font-weight: 500,
+  $font-family,
+  $font-color: $WHITE
+) {
   font-size: $font-size;
   font-weight: $font-weight;
+  font-family: $font-family;
   color: $font-color;
 }
 @mixin flex-col(
@@ -24,7 +30,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin size($size) {
-  width: $size;
-  height: $size;
+@mixin size($size-w, $size-h) {
+  width: $size-w;
+  height: $size-h;
 }

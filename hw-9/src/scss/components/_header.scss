@@ -1,0 +1,6 @@
+.header {
+  &__container {
+    @include size(980px, auto);
+    margin: 0 auto;
+  }
+}
