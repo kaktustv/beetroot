@@ -23,7 +23,7 @@
 @font-face {
   font-family: "weathericons";
   src: url("weathericons-regular-webfont.a0720c00.eot");
-  src: url("weathericons-regular-webfont.a0720c00.eot?#iefix") format("embedded-opentype"), url("weathericons-regular-webfont.7ee61a9c.woff2") format("woff2"), url("weathericons-regular-webfont.97a5b90e.woff") format("woff"), url("weathericons-regular-webfont.41202804.ttf") format("truetype"), url("weathericons-regular-webfont.6e8b7e34.svg#weather_iconsregular") format("svg");
+  src: url("weathericons-regular-webfont.a0720c00.eot?#iefix") format("embedded-opentype"), url("weathericons-regular-webfont.7ee61a9c.woff2") format("woff2"), url("weathericons-regular-webfont.97a5b90e.woff") format("woff"), url("weathericons-regular-webfont.41202804.ttf") format("truetype"), url("weathericons-regular-webfont.fd5b4c90.svg#weather_iconsregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2446,7 +2446,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #3399cc;
   border: 25px solid #2b81ac;
 }
