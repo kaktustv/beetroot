@@ -1,4 +1,8 @@
-@mixin text($font-size: $H18, $font-weight: 500, $font-color: $WHITE) {
+@mixin text(
+  $font-size: $H18,
+  $font-weight: 500,
+  $font-color: $white
+) {
   font-size: $font-size;
   font-weight: $font-weight;
   color: $font-color;
@@ -24,7 +28,7 @@
   flex-wrap: $wrap;
 }
 
-@mixin size($size) {
-  width: $size;
-  height: $size;
+@mixin size($size-w, $size-h) {
+  width: $size-w;
+  height: $size-h;
 }

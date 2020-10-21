@@ -1,4 +1,5 @@
 //color
+$white: white;
 $san-francisco: #cc6699;
 $new-york: #99cc99;
 $paris: #33cccc;
@@ -12,10 +13,18 @@ $border-color: #2b81ac;
 $moscow: #c24747;
 $tel-aviv: #e2674a;
 
-//font
+$color-list: #3399cc, #33cccc, #996699, #c24747, #e2674a, #ffcc66, #99cc99,
+ #669999, #cc6699,  #339966,  #666699;
 
+
+//font
+$f-licida: "Lucida", sans-serif;
 //font-size
+$base-font-size: 16px;
 @function calcRem($size) {
-    $remSize: $size / $base-font-size;
-    @return #{$remSize}rem;
-  }
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+$h20: calcRem(20px);
+$h25: calcRem(25px);

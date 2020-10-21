@@ -1,7 +1,9 @@
-@import './vars';
-@import './mixin';
-@import './common';
+@import "./weather/weather-icons.scss";
+@import "./fonts";
+@import "./vars";
+@import "./mixin";
+@import "./common";
 
-@import './components/header';
-@import './components/main';
-@import './components/footer';
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
