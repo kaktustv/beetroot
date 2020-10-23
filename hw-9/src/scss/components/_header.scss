@@ -1,0 +1,9 @@
+.header {
+  &__container {
+    @include size(990px, auto);
+    margin: 0 auto;
+    padding: 35px 0;
+    @include text($h25, 400, $white);
+    font-family: $f-licida;
+  }
+}
