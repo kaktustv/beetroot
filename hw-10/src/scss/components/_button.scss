@@ -1,7 +1,7 @@
 .button {
   @include flex(center, center);
   @include text($h20, 300, $white, $f-raleway);
-  background-color: $orange;
+  min-width: 200px;
   padding: 20px 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   transition-property: box-shadow, background-color;
@@ -11,6 +11,6 @@
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   }
   &:active{
-    background-color: darken($color: $orange, $amount: 5%);
+    background-color: darken($color: $button-color, $amount: 5%);
   }
 }
