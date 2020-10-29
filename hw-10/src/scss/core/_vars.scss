@@ -1,0 +1,25 @@
+//color
+
+$turquoise: #00c4c4;
+$fonts-color: #262626;
+$orange: #ff6033;
+$white: #ffffff;
+
+//font
+
+$f-pacifico: 'Pacifico', cursive;
+$f-raleway: 'Raleway', sans-serif;
+
+//font-size
+$base-font-size: 16px;
+@function calcRem($size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+$h90: calcRem(90px);
+$h60: calcRem(60px);
+$h50: calcRem(50px);
+$h20: calcRem(20px);
+$h17: calcRem(17px);
+$h16: calcRem(16px);
