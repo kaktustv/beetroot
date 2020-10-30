@@ -1,0 +1,24 @@
+.about{
+    @include flex(center, center, row, nowrap);
+    @include size(100%, auto);
+    min-height: 700px;
+    padding: 36px 0px 10px;
+    padding-left: 11%;
+    padding-right: 11%;
+    background-color: $turquoise;
+    &__img{
+        width: 50%;
+        margin-right: 90px;
+        @include padding-hack(48%);
+    }
+    &__text{
+        @include size(500px, auto);
+        &-title{
+            @include text($h90, 700, $white, $f-raleway);
+        }
+        &-subtitle{
+            @include text($h17, 300, $white, $f-raleway);
+            line-height: 27px;
+        }
+    }
+}
