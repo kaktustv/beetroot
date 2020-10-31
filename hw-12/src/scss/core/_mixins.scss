@@ -128,8 +128,13 @@ $screen-hd: 1366px;
 $screen-fullhd: 1440px;
 $screen-retina: 1660px;
 
-@mixin media($screen: $screen-desktop) {
+@mixin media-m-d($screen: $screen-desktop) {
   @media screen and (min-width: $screen) {
+    @content;
+  }
+}
+@mixin media-d-m($screen: $screen-desktop) {
+  @media screen and (max-width: $screen) {
     @content;
   }
 }
