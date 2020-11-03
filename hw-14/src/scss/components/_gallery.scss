@@ -1,19 +1,50 @@
 $button-color: $lighten-blue;
 
 .gallery {
-  
+  @include flex(center, center, column, nowrap);
+  background-color: $yellow;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  &__title {
+    @include text($h90, 700, $fonts-color, $f-raleway);
+    margin-bottom: 28px;
+  }
+  &__subtitle {
+    @include text($h17, 300, $fonts-color, $f-raleway);
+    max-width: 577px;
+    text-align: center;
+    margin-bottom: 46px;
+    padding: 0 3%;
+  }
+  &__button {
+    background-color: $lighten-blue;
+  }
   &__grid {
-    @include padding-hack(76.2%);
-    max-width: 1170px;
+    padding: 0 3%;
+    @include media-d-m($screen-tablet-large){
+      grid-gap: 15px 20px;
+    }
+    @include media-d-m($screen-tablet-small){
+      grid-gap: 12px 15px;
+    }
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    max-width: 1170px;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 25px 30px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-bottom: 70px;
     grid-template-areas:
       "large large large large small-1 small-1"
       "large large large large small-2 small-2"
       "medium-1 medium-1 medium-1 medium-2 medium-2 medium-2";
-      grid-gap: 30px;
+
     &__item {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      transition: all 0.2s ease;
       @for $i from 1 through length($grid-area-list) {
         &:nth-child(#{$i}) {
           grid-area: nth($grid-area-list, $i);
