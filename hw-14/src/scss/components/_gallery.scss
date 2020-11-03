@@ -1,0 +1,24 @@
+$button-color: $lighten-blue;
+
+.gallery {
+  
+  &__grid {
+    @include padding-hack(76.2%);
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas:
+      "large large large large small-1 small-1"
+      "large large large large small-2 small-2"
+      "medium-1 medium-1 medium-1 medium-2 medium-2 medium-2";
+      grid-gap: 30px;
+    &__item {
+      @for $i from 1 through length($grid-area-list) {
+        &:nth-child(#{$i}) {
+          grid-area: nth($grid-area-list, $i);
+        }
+      }
+    }
+  }
+}
