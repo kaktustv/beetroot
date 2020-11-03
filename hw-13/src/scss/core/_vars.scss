@@ -1,0 +1,38 @@
+//color
+
+$turquoise: #00c4c4;
+$fonts-color: #262626;
+$orange: #ff6033;
+$white: #ffffff;
+$violet: #b07cf7;
+$coral: #f72b3b;
+$date-bg: #2626267e;
+$border-color: #355b82;
+$spirit: #b9b9b9;
+$turquoise: #00c4c4;
+$blue: #70bfff;
+$light-black: #9d9d9d;
+
+//font
+
+$f-pacifico: 'Pacifico', cursive;
+$f-raleway: 'Raleway', sans-serif;
+
+//font-size
+$base-font-size: 16px;
+@function calcRem($size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+$h90: calcRem(90px);
+$h60: calcRem(60px);
+$h50: calcRem(50px);
+$h32: calcRem(32px);
+$h25: calcRem(25px);
+$h21: calcRem(21px);
+$h20: calcRem(20px);
+$h17: calcRem(17px);
+$h16: calcRem(16px);
+$h15: calcRem(15px);
+$h13: calcRem(13px);
