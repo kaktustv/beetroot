@@ -3,6 +3,12 @@
 @import './core/mixins';
 @import './core/common';
 
+@import './components/header';
+@import './components/about';
+@import './components/services';
 @import './components/gallery';
+@import './components/blog.scss';
+@import './components/blog__gallery.scss';
 @import './components/subscribe';
+@import './components/footer';
 @import './components/button';

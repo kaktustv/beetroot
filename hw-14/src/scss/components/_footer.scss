@@ -1,0 +1,137 @@
+.footer {
+  @include flex(center, center, column, nowrap);
+  background-image: url(../assets/images/footer-img.png);
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 100px;
+  &__block-contact {
+    @include flex(center, center, column, nowrap);
+    padding-right: 11%;
+    padding-left: 11%;
+    @include media-d-m($screen-desktop-large) {
+        padding: 0;
+      }
+  }
+  &__title {
+    @include text($h90, 700, $fonts-color, $f-raleway);
+    margin-bottom: 48px;
+    @include media-d-m($screen-iphone-6){
+      font-size: $h60;
+    }
+  }
+  &__subtitle {
+    @include text($h17, 300, $fonts-color, $f-raleway);
+    max-width: 342px;
+    padding-bottom: 46px;
+
+    text-align: center;
+  }
+  &__wrapper {
+    @include size(100%, auto);
+    @include flex(space-between, flex-start, row, wrap);
+    @include media-d-m($screen-desktop-large) {
+      @include flex(center, center, column, wrap);
+    }
+    margin-bottom: 120px;
+  }
+  &__form {
+    @include flex(center, center, column, wrap);
+    margin-right: 170px;
+    @include media-d-m($screen-desktop-large) {
+      margin-bottom: 48px;
+      margin-right: 0;
+    }
+  }
+  &__input {
+    @include size(495px, 50px);
+    @include text($h15, 300, $white, $f-raleway);
+    outline: none;
+    border: none;
+    border-left: 5px solid transparent;
+    background-color: $turquoise;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    padding: 10px;
+    @include media-d-m($screen-tablet-small){
+      max-width: 390px;
+    }
+    @include media-d-m($screen-iphone-plus){
+      max-width: 290px;
+    }
+    @include media-d-m($screen-iphone-5){
+      max-width: 240px;
+    }
+
+    margin-bottom: 15px;
+    &:focus {
+      border-left: 5px solid $border-color;
+    }
+    &::placeholder {
+      @include text($h15, 300, $white, $f-raleway);
+    }
+  }
+  &__textarea {
+    @include size(495px, 250px);
+    @include text($h15, 300, $white, $f-raleway);
+    outline: none;
+    border: none;
+    border-left: 5px solid transparent;
+    background-color: $turquoise;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    padding: 10px;
+    @include media-d-m($screen-tablet-small){
+      max-width: 390px;
+    }
+    @include media-d-m($screen-iphone-plus){
+      max-width: 290px;
+    }    
+    @include media-d-m($screen-iphone-5){
+      max-width: 240px;
+    }
+
+    padding: 10px;
+    &:focus {
+      border-left: 5px solid $border-color;
+    }
+    &::placeholder {
+      @include text($h15, 300, $white, $f-raleway);
+    }
+  }
+  &__contact {
+    @include media-d-m($screen-desktop-large) {
+      text-align: center;
+    }
+    &__title {
+      @include text($h17, 700, $fonts-color, $f-raleway);
+    }
+    &__description {
+      @include text($h17, 300, $fonts-color, $f-raleway);
+    }
+  }
+  &__block {
+    @include size(100%, auto);
+    @include flex(space-between, center, row, wrap);
+    padding: 30px 11%;
+    background-color: $fonts-color;
+    @include media-d-m($screen-tablet-large){
+        @include flex(center, center, column, wrap);
+    }
+  }
+  &__copyright {
+    @include text($h16, 300, $spirit, $f-raleway);
+  }
+  &__logo {
+    @include text($h25, 400, $spirit, $f-pacifico);
+  }
+  &__made-with {
+    @include text($h16, 300, $spirit, $f-raleway);
+    &--color-text {
+      @include text($h16, 900, $spirit, $f-raleway);
+      color: $coral;
+    }
+  }
+}

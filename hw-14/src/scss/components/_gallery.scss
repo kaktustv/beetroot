@@ -3,11 +3,14 @@ $button-color: $lighten-blue;
 .gallery {
   @include flex(center, center, column, nowrap);
   background-color: $yellow;
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding: 100px 3%;
+  
   &__title {
     @include text($h90, 700, $fonts-color, $f-raleway);
     margin-bottom: 28px;
+    @include media-d-m($screen-iphone-plus){
+      font-size: $h60;
+    }
   }
   &__subtitle {
     @include text($h17, 300, $fonts-color, $f-raleway);
@@ -15,13 +18,12 @@ $button-color: $lighten-blue;
     max-width: 577px;
     text-align: center;
     margin-bottom: 46px;
-    padding: 0 3%;
   }
   &__button {
     background-color: $lighten-blue;
+    text-transform: uppercase;
   }
   &__grid {
-    padding: 0 3%;
     @include media-d-m($screen-tablet-large){
       grid-gap: 15px 20px;
     }

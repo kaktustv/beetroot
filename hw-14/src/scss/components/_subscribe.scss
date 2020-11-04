@@ -48,6 +48,9 @@
       @include media-d-m($screen-tablet){
         max-width: 270px;
       }
+      @include media-d-m($screen-iphone-plus){
+        max-width: 250px;
+      }
   }
   &__button{
     @include text($h20, 300, $fonts-color, $f-raleway);

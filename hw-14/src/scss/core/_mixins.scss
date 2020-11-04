@@ -138,3 +138,8 @@ $screen-retina: 1660px;
     @content;
   }
 }
+@mixin bg-image($url, $cover: cover, $n-rep: no-repeat) {
+  background-image: url(#{$url});
+  background-size: $cover ;
+  background-repeat: $n-rep;
+}
