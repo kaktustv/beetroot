@@ -11,6 +11,7 @@ $button-color: $lighten-blue;
   }
   &__subtitle {
     @include text($h17, 300, $fonts-color, $f-raleway);
+    line-height: 27px;
     max-width: 577px;
     text-align: center;
     margin-bottom: 46px;
