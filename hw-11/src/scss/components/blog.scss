@@ -1,0 +1,25 @@
+$button-color: $coral;
+
+.blog{
+    @include flex(center, center, column, nowrap);
+    background-color: $violet;
+    padding-top: 100px;
+    &__text{
+        text-align: center;
+        &__title{
+            @include text($h90, 700, $white, $f-raleway);
+            padding-bottom: 30px;
+        }
+        &__subtitle{
+            max-width: 560px;
+            @include text($h17, 300, $white, $f-raleway);
+            line-height: 25px;
+            padding-bottom: 32px;
+        }
+    }
+    &__button{
+        background-color: $coral;
+        margin-bottom: 140px;
+    }
+    
+}

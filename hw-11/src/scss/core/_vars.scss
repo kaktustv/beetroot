@@ -1,0 +1,28 @@
+//color
+
+$violet: #b07cf7;
+$coral: #f72b3b;
+$white: #ffffff;
+$date-bg: #2626267e;
+
+//font
+
+$f-pacifico: 'Pacifico', cursive;
+$f-raleway: 'Raleway', sans-serif;
+
+//font-size
+$base-font-size: 16px;
+@function calcRem($size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+$h90: calcRem(90px);
+$h60: calcRem(60px);
+$h50: calcRem(50px);
+$h32: calcRem(32px);
+$h21: calcRem(21px);
+$h20: calcRem(20px);
+$h17: calcRem(17px);
+$h16: calcRem(16px);
+$h13: calcRem(13px);
