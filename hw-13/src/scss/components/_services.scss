@@ -29,4 +29,24 @@
       margin-bottom: 30px;
     }
   }
+  &__title {
+    position: relative;
+  }
+  &__txt {
+    @include flex(center, center, row, wrap);
+    @include text($h60, 700, $white, $f-raleway);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  &__images {
+    width: 400px;
+    @include padding-hack(114%);
+    @include media-d-m($screen-netbook){
+        margin-bottom: 30px;
+    }
+  }
 }
