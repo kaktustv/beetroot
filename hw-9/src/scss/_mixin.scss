@@ -1,6 +1,7 @@
 @mixin text(
   $font-size: $H18,
   $font-weight: 500,
+  $font-family,
   $font-color: $white
 ) {
   font-size: $font-size;

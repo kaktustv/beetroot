@@ -23,7 +23,7 @@
 @font-face {
   font-family: "weathericons";
   src: url("weathericons-regular-webfont.a0720c00.eot");
-  src: url("weathericons-regular-webfont.a0720c00.eot?#iefix") format("embedded-opentype"), url("weathericons-regular-webfont.7ee61a9c.woff2") format("woff2"), url("weathericons-regular-webfont.97a5b90e.woff") format("woff"), url("weathericons-regular-webfont.41202804.ttf") format("truetype"), url("weathericons-regular-webfont.6e8b7e34.svg#weather_iconsregular") format("svg");
+  src: url("weathericons-regular-webfont.a0720c00.eot?#iefix") format("embedded-opentype"), url("weathericons-regular-webfont.7ee61a9c.woff2") format("woff2"), url("weathericons-regular-webfont.97a5b90e.woff") format("woff"), url("weathericons-regular-webfont.41202804.ttf") format("truetype"), url("weathericons-regular-webfont.fd5b4c90.svg#weather_iconsregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2458,26 +2458,26 @@ body {
   padding: 35px 0;
   font-size: 1.5625rem;
   font-weight: 400;
-  color: white;
   font-family: "Lucida", sans-serif;
+  color: white;
 }
 
-.main__container {
+.main .main__container {
   width: 1000px;
   height: auto;
   margin: 0 auto;
 }
-.main__items {
+.main .main__items {
   display: inline-block;
   border: 2px solid white;
   list-style: none;
   font-size: 0;
   position: relative;
 }
-.main__items:hover .main__item:not(:hover)::before {
+.main .main__items:hover .main__item:not(:hover)::before {
   opacity: 0.4;
 }
-.main__item {
+.main .main__item {
   padding: 30px 0;
   text-align: center;
   border: 2px solid white;
@@ -2485,7 +2485,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-.main__item:before {
+.main .main__item:before {
   content: "";
   display: block;
   top: 0;
@@ -2497,73 +2497,74 @@ body {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-.main__item-title {
+.main .main__item-title {
   width: 100%;
   display: block;
   padding-bottom: 10px;
   font-size: 1.25rem;
   font-weight: 400;
-  color: white;
   font-family: "Lucida", sans-serif;
+  color: white;
 }
-.main__item-temp-i {
+.main .main__item-temp-i {
   display: inline-block;
   text-align: center;
 }
-.main__item-temperature {
+.main .main__item-temperature {
   font-size: 1.25rem;
   font-weight: 400;
-  color: white;
   font-family: "Lucida", sans-serif;
+  color: white;
 }
-.main__item-i {
+.main .main__item-i {
   font-size: 1.25rem;
   font-weight: 400;
+  font-family: white;
   color: white;
   padding-left: 10px;
   font-size: 25px;
   opacity: 0.8;
 }
-.main__item-1-1 {
+.main .main__item-1-1 {
   width: 100%;
 }
-.main__item-1-2 {
+.main .main__item-1-2 {
   width: 50%;
 }
-.main__item-1-4 {
+.main .main__item-1-4 {
   width: 25%;
 }
-.main__item:nth-child(1) {
+.main .main__item:nth-child(1) {
   background-color: #3399cc;
 }
-.main__item:nth-child(2) {
+.main .main__item:nth-child(2) {
   background-color: #33cccc;
 }
-.main__item:nth-child(3) {
+.main .main__item:nth-child(3) {
   background-color: #996699;
 }
-.main__item:nth-child(4) {
+.main .main__item:nth-child(4) {
   background-color: #c24747;
 }
-.main__item:nth-child(5) {
+.main .main__item:nth-child(5) {
   background-color: #e2674a;
 }
-.main__item:nth-child(6) {
+.main .main__item:nth-child(6) {
   background-color: #ffcc66;
 }
-.main__item:nth-child(7) {
+.main .main__item:nth-child(7) {
   background-color: #99cc99;
 }
-.main__item:nth-child(8) {
+.main .main__item:nth-child(8) {
   background-color: #669999;
 }
-.main__item:nth-child(9) {
+.main .main__item:nth-child(9) {
   background-color: #cc6699;
 }
-.main__item:nth-child(10) {
+.main .main__item:nth-child(10) {
   background-color: #339966;
 }
-.main__item:nth-child(11) {
+.main .main__item:nth-child(11) {
   background-color: #666699;
 }
 
@@ -2574,6 +2575,6 @@ body {
   padding: 35px 0;
   font-size: 1.5625rem;
   font-weight: 300;
-  color: white;
   font-family: "Lucida", sans-serif;
+  color: white;
 }

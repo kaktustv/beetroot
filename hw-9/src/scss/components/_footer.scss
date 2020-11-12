@@ -3,7 +3,6 @@
     @include size(990px, auto);
     margin: 0 auto;
     padding: 35px 0;
-    @include text($h25, 300, $white);
-    font-family: $f-licida;
+    @include text($h25, 300,$f-licida, $white);
   }
 }
