@@ -9,6 +9,9 @@
     @include flex(space-between, flex-start, row, nowrap);
     padding: 0px 11%;
   }
+  &__menu-a{
+    color: $fonts-color;
+  }
   &__menu-logo-text {
     @include text($h50, 400, $fonts-color, $f-pacifico);
     @include size(127px, auto);
