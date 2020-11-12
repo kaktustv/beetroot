@@ -1,6 +1,11 @@
-@mixin text($font-size: $H18, $font-weight: 500, $font-color: $WHITE) {
+@mixin text(
+  $font-size: $H18,
+  $font-weight: 500,
+  $font-color: $white
+) {
   font-size: $font-size;
   font-weight: $font-weight;
+  font-family: $font-family;
   color: $font-color;
 }
 @mixin flex-col(

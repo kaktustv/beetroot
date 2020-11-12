@@ -1,75 +1,77 @@
 $style: main;
 .#{$style} {
-  &__container {
-    @include size(1000px, auto);
-    margin: 0 auto;
-  }
-  &__items {
-    display: inline-block;
-    border: 2px solid $white;
-    list-style: none;
-    font-size: 0;
-    position: relative;
-    &:hover {
-      .main__item:not(:hover) {
-        &::before {
-          opacity: 0.4;
+  .main {
+    &__container {
+      @include size(1000px, auto);
+      margin: 0 auto;
+    }
+    &__items {
+      display: inline-block;
+      border: 2px solid $white;
+      list-style: none;
+      font-size: 0;
+      position: relative;
+      &:hover {
+        .main__item:not(:hover) {
+          &::before {
+            opacity: 0.4;
+          }
         }
       }
     }
-  }
-  &__item {
-    padding: 30px 0;
-    text-align: center;
-    border: 2px solid $white;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    &:before {
-      content: "";
-      display: block;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      position: absolute;
-      background-color: rgb(255, 255, 255);
-      opacity: 0;
-      transition: opacity 0.2s ease;
-    }
-    &-title {
-      width: 100%;
-      display: block;
-      padding-bottom: 10px;
-      @include text($h20, 400, $white);
-      font-family: $f-licida;
-    }
-    &-temp-i {
-      display: inline-block;
+    &__item {
+      padding: 30px 0;
       text-align: center;
-    }
-    &-temperature {
-      @include text($h20, 400, $white);
-      font-family: $f-licida;
-    }
-    &-i {
-      @include text($h20, 400, $white);
-      padding-left: 10px;
-      font-size: 25px;
-      opacity: 0.8;
-    }
-    &-1-1 {
-      width: 100%;
-    }
-    &-1-2 {
-      width: 50%;
-    }
-    &-1-4 {
-      width: 25%;
-    }
-    @for $i from 1 through length($color-list) {
-      &:nth-child(#{$i}) {
-        background-color: nth($color-list, $i);
+      border: 2px solid $white;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      &:before {
+        content: "";
+        display: block;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+      &-title {
+        width: 100%;
+        display: block;
+        padding-bottom: 10px;
+        @include text($h20, 400, $white);
+        font-family: $f-licida;
+      }
+      &-temp-i {
+        display: inline-block;
+        text-align: center;
+      }
+      &-temperature {
+        @include text($h20, 400, $white);
+        font-family: $f-licida;
+      }
+      &-i {
+        @include text($h20, 400, $white);
+        padding-left: 10px;
+        font-size: 25px;
+        opacity: 0.8;
+      }
+      &-1-1 {
+        width: 100%;
+      }
+      &-1-2 {
+        width: 50%;
+      }
+      &-1-4 {
+        width: 25%;
+      }
+      @for $i from 1 through length($color-list) {
+        &:nth-child(#{$i}) {
+          background-color: nth($color-list, $i);
+        }
       }
     }
   }
