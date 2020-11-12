@@ -15,14 +15,11 @@
   }
   &__title {
     @include text($h90, 700, $fonts-color, $f-raleway);
-    margin-bottom: 48px;
-    @include media-d-m($screen-iphone-6){
-      font-size: $h60;
-    }
+    margin-bottom: 28px;
   }
   &__subtitle {
     @include text($h17, 300, $fonts-color, $f-raleway);
-    max-width: 342px;
+    max-width: 350px;
     padding-bottom: 46px;
 
     text-align: center;
@@ -46,73 +43,42 @@
   &__input {
     @include size(495px, 50px);
     @include text($h15, 300, $white, $f-raleway);
-    outline: none;
-    border: none;
     border-left: 5px solid transparent;
-    background-color: $turquoise;
-    transition-property: border-color;
+    background-color: transparentize($color: $turquoise, $amount: 0.5);
+    transition-property: border-color, background-color, font-weight;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     padding: 10px;
-    @include media-d-m($screen-tablet-small){
-      max-width: 390px;
-    }
-    @include media-d-m($screen-iphone-plus){
-      max-width: 290px;
-    }
-    @include media-d-m($screen-iphone-5){
-      max-width: 240px;
-    }
-
     margin-bottom: 15px;
     &:focus {
+      @include text($h15, 700, $white, $f-raleway);
       border-left: 5px solid $border-color;
+      background-color: transparentize($color: $turquoise, $amount: 0);
+      &::placeholder {
+        @include text($h15, 700, $white, $f-raleway);
+      }
     }
     &::placeholder {
       @include text($h15, 300, $white, $f-raleway);
     }
-  }
-  &__textarea {
-    @include size(495px, 250px);
-    @include text($h15, 300, $white, $f-raleway);
-    outline: none;
-    border: none;
-    border-left: 5px solid transparent;
-    background-color: $turquoise;
-    transition-property: border-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    padding: 10px;
-    @include media-d-m($screen-tablet-small){
-      max-width: 390px;
-    }
-    @include media-d-m($screen-iphone-plus){
-      max-width: 290px;
-    }    
-    @include media-d-m($screen-iphone-5){
-      max-width: 240px;
-    }
-
-    padding: 10px;
-    &:focus {
-      border-left: 5px solid $border-color;
-    }
-    &::placeholder {
-      @include text($h15, 300, $white, $f-raleway);
-    }
+    &--textarea{
+      @include size(495px, 250px);}
   }
   &__contact {
     @include media-d-m($screen-desktop-large) {
       text-align: center;
     }
-    &__title {
-      @include text($h17, 700, $fonts-color, $f-raleway);
-    }
-    &__description {
-      @include text($h17, 300, $fonts-color, $f-raleway);
+  }
+  &__contact-title {
+    @include text($h17, 700, $fonts-color, $f-raleway);
+  }
+  &__contact-description {
+    @include text($h17, 300, $fonts-color, $f-raleway);
+    &:not(:last-of-type){
+      padding-bottom: 15px;
     }
   }
-  &__block {
+  &__info {
     @include size(100%, auto);
     @include flex(space-between, center, row, wrap);
     padding: 30px 11%;

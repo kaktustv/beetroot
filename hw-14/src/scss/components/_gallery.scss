@@ -1,14 +1,12 @@
-$button-color: $lighten-blue;
-
 .gallery {
   @include flex(center, center, column, nowrap);
   background-color: $yellow;
   padding: 100px 3%;
-  
+
   &__title {
     @include text($h90, 700, $fonts-color, $f-raleway);
     margin-bottom: 28px;
-    @include media-d-m($screen-iphone-plus){
+    @include media-d-m($screen-iphone-plus) {
       font-size: $h60;
     }
   }
@@ -19,15 +17,11 @@ $button-color: $lighten-blue;
     text-align: center;
     margin-bottom: 46px;
   }
-  &__button {
-    background-color: $lighten-blue;
-    text-transform: uppercase;
-  }
   &__grid {
-    @include media-d-m($screen-tablet-large){
+    @include media-d-m($screen-tablet-large) {
       grid-gap: 15px 20px;
     }
-    @include media-d-m($screen-tablet-small){
+    @include media-d-m($screen-tablet-small) {
       grid-gap: 12px 15px;
     }
     display: grid;
@@ -42,17 +36,30 @@ $button-color: $lighten-blue;
       "large large large large small-1 small-1"
       "large large large large small-2 small-2"
       "medium-1 medium-1 medium-1 medium-2 medium-2 medium-2";
-
-    &__item {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      transition: all 0.2s ease;
-      @for $i from 1 through length($grid-area-list) {
-        &:nth-child(#{$i}) {
-          grid-area: nth($grid-area-list, $i);
-        }
+  }
+  &__grid-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    @for $i from 1 through length($grid-area-list) {
+      &:nth-child(#{$i}) {
+        grid-area: nth($grid-area-list, $i);
       }
+    }
+  }
+  &__button {
+    background-color: $lighten-blue;
+    text-transform: uppercase;
+    &:active {
+      background-color: darken($color: $lighten-blue, $amount: 5%);
     }
   }
 }

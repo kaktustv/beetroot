@@ -21,12 +21,15 @@
     }
     &__text{
         max-width: 500px;
-        &-title{
-            @include text($h90, 700, $white, $f-raleway);
-        }
-        &-subtitle{
-            @include text($h17, 300, $white, $f-raleway);
-            line-height: 27px;
-        }
+    }
+    &__text-title{
+        @include text($h90, 700, $white, $f-raleway);
+    }
+    &__text-subtitle{
+        @include text($h17, 300, $white, $f-raleway);
+        line-height: 27px;
+    }
+    &__text-path:first-of-type{
+        margin-bottom: 10px;
     }
 }

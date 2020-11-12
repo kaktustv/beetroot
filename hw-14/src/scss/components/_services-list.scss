@@ -1,0 +1,33 @@
+.services-list {
+  margin-right: 130px;
+  @include media-d-m($screen-netbook) {
+    margin-right: 0;
+  }
+  &__item {
+    @include flex(center, center, row, nowrap);
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: $white;
+  }
+  &__title {
+    @include flex(center, center, row, wrap);
+    @include text($h20, 700, $fonts-color, $f-raleway);
+    @include size(299px, 100px);
+    border-right: 1px solid $light-black;
+    text-align: center;
+  }
+  &__svg {
+    @include flex(center, center, row, wrap);
+    font-size: 44px;
+    width: 100px;
+  }
+}
+.services-list-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+}

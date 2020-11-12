@@ -1,5 +1,3 @@
-$button-color: $orange;
-
 .header {
   @include bg-image("../assets/images/header-img.png", cover);
   @include flex(space-between, flex-start, column, nowrap);
@@ -10,61 +8,61 @@ $button-color: $orange;
     @include size(100%, auto);
     @include flex(space-between, flex-start, row, nowrap);
     padding: 0px 11%;
-    &-logo {
-      &-text {
-        @include text($h50, 400, $fonts-color, $f-pacifico);
-        @include size(127px, auto);
-        
-      }
+  }
+  &__menu-logo-text {
+    @include text($h50, 400, $fonts-color, $f-pacifico);
+    @include size(127px, auto);
+  }
+  &__menu-nav {
+    @include media-d-m($screen-desktop) {
+      display: none;
     }
-    &-nav {
-      @include media-d-m($screen-desktop){
-        display: none;
-      }
-      &-items {
-        margin: 15px -20px;
-      }
-      &-item {
-        @include text($h16, 700, $fonts-color, $f-raleway);
-        display: inline-block;
-        text-transform: uppercase;
-        margin: 11px 20px;
-        padding: 9px 0;
-        border-top: 3px solid transparent;
-        transition-property: border-color;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        cursor: pointer;
-      }
-      &-item:hover {
-        border-top: 3px solid $orange;
-      }
-    }
+  }
+  &__menu-nav-items {
+    margin: 15px -20px;
+  }
+  &__menu-nav-item {
+    @include text($h16, 700, $fonts-color, $f-raleway);
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 11px 20px;
+    padding: 9px 0;
+    border-top: 3px solid transparent;
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+  }
+  &__menu-nav-item:hover {
+    border-top: 3px solid $orange;
   }
   &__block {
     @include flex(center, flex-start, column, nowrap);
     @include size(100%, 250px);
     padding: 92px 11%;
-    &-button{
-      background-color: $orange;
+  }
+  &__block-button {
+    background-color: $orange;
+    &:active {
+      background-color: darken($color: $orange, $amount: 5%);
     }
-    &-wrapper {
-      width: 100%;
-      @include media-d-m($screen-tablet-small){
-        @include flex(center, center, column, nowrap);
-        text-align: center;
-      }
+  }
+  &__block-wrapper {
+    width: 100%;
+    @include media-d-m($screen-tablet-small) {
+      @include flex(center, center, column, nowrap);
+      text-align: center;
     }
-    &-title {
-      @include text($h60, 900, $fonts-color, $f-raleway);
-      margin-bottom: 21px;
-    }
-    &-subtitle {
-      @include text($h17, 300, $fonts-color, $f-raleway);
-      max-width: 370px;
-      margin-bottom: 31px;
-      line-height: 27px;
-    }
+  }
+  &__block-title {
+    @include text($h60, 900, $fonts-color, $f-raleway);
+    margin-bottom: 21px;
+  }
+  &__block-subtitle {
+    @include text($h17, 300, $fonts-color, $f-raleway);
+    max-width: 370px;
+    margin-bottom: 31px;
+    line-height: 27px;
   }
   &__scroll {
     @include flex(center, flex-start, column, nowrap);
@@ -83,27 +81,27 @@ $button-color: $orange;
       top: 6px;
       height: 10px;
     }
-    &-block {
-      @include size(24px, 40px);
-      border: 3px solid $fonts-color;
-      border-radius: 50px;
-      position: relative;
-      transition-property: height, scale;
+  }
+  &__scroll-block {
+    @include size(24px, 40px);
+    border: 3px solid $fonts-color;
+    border-radius: 50px;
+    position: relative;
+    transition-property: height, scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    &:before {
+      content: "";
+      width: 2.5px;
+      height: 5px;
+      background-color: $fonts-color;
+      position: absolute;
+      top: 4px;
+      left: 7.5px;
+      border-radius: 20px;
+      transition-property: height, top;
       transition-duration: 0.3s;
       transition-timing-function: ease;
-      &:before {
-        content: "";
-        width: 2.5px;
-        height: 5px;
-        background-color: $fonts-color;
-        position: absolute;
-        top: 4px;
-        left: 7.5px;
-        border-radius: 20px;
-        transition-property: height, top;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-      }
     }
   }
 }

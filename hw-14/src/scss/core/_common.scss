@@ -11,7 +11,7 @@ input,
 button,
 textarea,
 select {
-  // font-family: sans-serif;
+  border: none;
 }
 
 ul {
@@ -24,5 +24,9 @@ a, button {
   outline: none;
   display: inline-flex;
   text-decoration: none;
+}
+.input{
+  outline: none;
+  border: none;
 }
 

@@ -24,7 +24,7 @@
   }
   &__subtitle{
     @include text($h17, 300, $fonts-color, $f-raleway);
-    max-width: 541px;
+    max-width: 545px;
     line-height: 27px;
     margin-bottom: 31px;
   }
@@ -56,5 +56,8 @@
     @include text($h20, 300, $fonts-color, $f-raleway);
     background-color: $green;
     text-transform: uppercase;
+    &:active{
+      background-color: darken($color: $green, $amount: 5%);
+    }
   }
 }
