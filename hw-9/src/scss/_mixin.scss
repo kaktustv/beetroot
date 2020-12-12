@@ -1,10 +1,6 @@
 @mixin text(
   $font-size: $H18,
   $font-weight: 500,
-<<<<<<< HEAD
-  $font-family,
-=======
->>>>>>> ecccd59e46081d6fc844dfde8c7322c4bdbd2b12
   $font-color: $white
 ) {
   font-size: $font-size;

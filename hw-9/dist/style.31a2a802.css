@@ -2446,7 +2446,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #3399cc;
   border: 25px solid #2b81ac;
 }
@@ -2458,26 +2458,26 @@ body {
   padding: 35px 0;
   font-size: 1.5625rem;
   font-weight: 400;
-  font-family: "Lucida", sans-serif;
   color: white;
+  font-family: "Lucida", sans-serif;
 }
 
-.main .main__container {
+.main__container {
   width: 1000px;
   height: auto;
   margin: 0 auto;
 }
-.main .main__items {
+.main__items {
   display: inline-block;
   border: 2px solid white;
   list-style: none;
   font-size: 0;
   position: relative;
 }
-.main .main__items:hover .main__item:not(:hover)::before {
+.main__items:hover .main__item:not(:hover)::before {
   opacity: 0.4;
 }
-.main .main__item {
+.main__item {
   padding: 30px 0;
   text-align: center;
   border: 2px solid white;
@@ -2485,7 +2485,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-.main .main__item:before {
+.main__item:before {
   content: "";
   display: block;
   top: 0;
@@ -2497,74 +2497,73 @@ body {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-.main .main__item-title {
+.main__item-title {
   width: 100%;
   display: block;
   padding-bottom: 10px;
   font-size: 1.25rem;
   font-weight: 400;
-  font-family: "Lucida", sans-serif;
   color: white;
+  font-family: "Lucida", sans-serif;
 }
-.main .main__item-temp-i {
+.main__item-temp-i {
   display: inline-block;
   text-align: center;
 }
-.main .main__item-temperature {
+.main__item-temperature {
   font-size: 1.25rem;
   font-weight: 400;
-  font-family: "Lucida", sans-serif;
   color: white;
+  font-family: "Lucida", sans-serif;
 }
-.main .main__item-i {
+.main__item-i {
   font-size: 1.25rem;
   font-weight: 400;
-  font-family: white;
   color: white;
   padding-left: 10px;
   font-size: 25px;
   opacity: 0.8;
 }
-.main .main__item-1-1 {
+.main__item-1-1 {
   width: 100%;
 }
-.main .main__item-1-2 {
+.main__item-1-2 {
   width: 50%;
 }
-.main .main__item-1-4 {
+.main__item-1-4 {
   width: 25%;
 }
-.main .main__item:nth-child(1) {
+.main__item:nth-child(1) {
   background-color: #3399cc;
 }
-.main .main__item:nth-child(2) {
+.main__item:nth-child(2) {
   background-color: #33cccc;
 }
-.main .main__item:nth-child(3) {
+.main__item:nth-child(3) {
   background-color: #996699;
 }
-.main .main__item:nth-child(4) {
+.main__item:nth-child(4) {
   background-color: #c24747;
 }
-.main .main__item:nth-child(5) {
+.main__item:nth-child(5) {
   background-color: #e2674a;
 }
-.main .main__item:nth-child(6) {
+.main__item:nth-child(6) {
   background-color: #ffcc66;
 }
-.main .main__item:nth-child(7) {
+.main__item:nth-child(7) {
   background-color: #99cc99;
 }
-.main .main__item:nth-child(8) {
+.main__item:nth-child(8) {
   background-color: #669999;
 }
-.main .main__item:nth-child(9) {
+.main__item:nth-child(9) {
   background-color: #cc6699;
 }
-.main .main__item:nth-child(10) {
+.main__item:nth-child(10) {
   background-color: #339966;
 }
-.main .main__item:nth-child(11) {
+.main__item:nth-child(11) {
   background-color: #666699;
 }
 
@@ -2575,6 +2574,6 @@ body {
   padding: 35px 0;
   font-size: 1.5625rem;
   font-weight: 300;
-  font-family: "Lucida", sans-serif;
   color: white;
+  font-family: "Lucida", sans-serif;
 }
