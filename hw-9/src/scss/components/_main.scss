@@ -42,16 +42,24 @@ $style: main;
         width: 100%;
         display: block;
         padding-bottom: 10px;
+<<<<<<< HEAD
+        @include text($h20, 400,$f-licida, $white);
+=======
         @include text($h20, 400, $white);
         font-family: $f-licida;
+>>>>>>> ecccd59e46081d6fc844dfde8c7322c4bdbd2b12
       }
       &-temp-i {
         display: inline-block;
         text-align: center;
       }
       &-temperature {
+<<<<<<< HEAD
+        @include text($h20, 400,$f-licida, $white);
+=======
         @include text($h20, 400, $white);
         font-family: $f-licida;
+>>>>>>> ecccd59e46081d6fc844dfde8c7322c4bdbd2b12
       }
       &-i {
         @include text($h20, 400, $white);

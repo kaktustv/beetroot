@@ -117,6 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
+<<<<<<< HEAD
+
+})({"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+=======
+>>>>>>> ecccd59e46081d6fc844dfde8c7322c4bdbd2b12
 })({"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -150,6 +155,10 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 },{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+<<<<<<< HEAD
+},{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+=======
+>>>>>>> ecccd59e46081d6fc844dfde8c7322c4bdbd2b12
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -217,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57357" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50878" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +403,8 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+<<<<<<< HEAD
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+=======
+>>>>>>> ecccd59e46081d6fc844dfde8c7322c4bdbd2b12
 //# sourceMappingURL=/style.a6dae8f7.js.map

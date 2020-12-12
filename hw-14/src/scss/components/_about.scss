@@ -1,0 +1,35 @@
+.about{
+    @include flex(center, center, row, nowrap);
+    @include size(100%, auto);
+    min-height: 700px;
+    padding: 36px 0px 10px;
+    padding-left: 11%;
+    padding-right: 11%;
+    background-color: $turquoise;
+    @include media-d-m($screen-desktop){
+        @include flex(center, center, column, wrap);
+        padding: 100px 3%;
+        text-align: center;
+    }
+    &__img{
+        width: 50%;
+        margin-right: 90px;
+        @include padding-hack(48%);
+        @include media-d-m($screen-desktop){
+            margin-right: 40px;
+        }
+    }
+    &__text{
+        max-width: 500px;
+    }
+    &__text-title{
+        @include text($h90, 700, $white, $f-raleway);
+    }
+    &__text-subtitle{
+        @include text($h17, 300, $white, $f-raleway);
+        line-height: 27px;
+    }
+    &__text-path:first-of-type{
+        margin-bottom: 10px;
+    }
+}

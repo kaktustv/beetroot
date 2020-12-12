@@ -1,0 +1,63 @@
+.subscribe {
+  min-height: 500px;
+  background-image: url(../assets/images/subscribe-img.png);
+  background-size: cover;
+  background-position: center;
+  padding: 145px 164px;
+  @include media-d-m($screen-desktop-large){
+    @include flex(center, center, column, wrap);
+    text-align: center;
+  }
+  @include media-d-m($screen-netbook){
+      padding: 72.5px 0;
+  }
+  &__inner{
+      max-width: 1500px;
+      margin: 0 auto;
+      @include media-d-m($screen-netbook){
+        padding: 0 3%;
+    }
+  }
+  &__title{
+      @include text($h40, 700, $fonts-color, $f-raleway);
+      margin-bottom: 21px;
+  }
+  &__subtitle{
+    @include text($h17, 300, $fonts-color, $f-raleway);
+    max-width: 545px;
+    line-height: 27px;
+    margin-bottom: 31px;
+  }
+  &__form{
+      @include flex(flex-start, center, row, wrap);
+      @include media-d-m($screen-desktop-large){
+        @include flex(center, center, column, wrap);
+      }
+  }
+  &__input{
+    @include text($h15, 300, $fonts-color, $f-raleway);
+    width: 570px;
+    border: 1px solid $fonts-color;
+    padding: 22px 15px;
+    margin-right: 60px;
+    outline: none;
+    @include media-d-m($screen-desktop-large){
+        margin-right: 0px;
+        margin-bottom: 60px;
+      }
+      @include media-d-m($screen-tablet){
+        max-width: 270px;
+      }
+      @include media-d-m($screen-iphone-plus){
+        max-width: 250px;
+      }
+  }
+  &__button{
+    @include text($h20, 300, $fonts-color, $f-raleway);
+    background-color: $green;
+    text-transform: uppercase;
+    &:active{
+      background-color: darken($color: $green, $amount: 5%);
+    }
+  }
+}
