@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 3</title>
+    <style>
+        html {
+            max-width: 500px;
+            margin-top: 50px;
+            margin-left: 100px;
+            font-family: sans-serif;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <h3>
+                1. Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), и
+                следующие функции для работы с этим объектом:
+
+                Функция для вывода на экран информации об автомобиле;
+
+                Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью.
+                Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+
+            </h3>
+            <p id="showCarInformation">Об автомобиле:</p>
+            <button id="t1" onclick="carRun()">Об автомобиле</button>
+            <br>
+            <br>
+            <input type="text" id="distance" placeholder="Введите растояние">
+            <button onclick="showDistanceTime()">Расчитать</button>
+            <p id="showCarDistanceTime">Потребуеться времени:</p>
+            <hr>
+        </li>
+        <li>
+            <h3>
+                Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с
+                этим объектом:
+                Функция сложения 2-х объектов-дробей;
+
+                Функция вычитания 2-х объектов-дробей;
+
+                Функция умножения 2-х объектов-дробей;
+
+                Функция деления 2-х объектов-дробей;
+
+                Функция сокращения объекта-дроби.
+
+                Сокращает автоматически !!!
+            </h3>
+            <input type="text" id="numOne" placeholder="Ведите числитель">
+            /
+            <input type="text" id="denomOne" placeholder="Ведите знаменатель">
+            <input type="text" id="numTwo" placeholder="Ведите числитель">
+            /
+            <input type="text" id="denomTwo" placeholder="Ведите знаменатель">
+            <button onclick="fractionSum()">Сложение</button>
+            <span id="showFractionSum">Результат: </span>
+            <br>
+            <button onclick="fractionMin()">Вычитание</button>
+            <span id="showFractionMin">Результат: </span>
+            <br>
+            <button onclick="fractionMul()">Умножение</button>
+            <span id="showFractionMul">Результат: </span>
+            <br>
+            <button onclick="fractionDev()">Деление</button>
+            <span id="showFractionDev">Результат: </span>
+        </li>
+        <li>
+            <h3>3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим
+                объектом:
+
+                Функция вывода времени на экран;
+
+                Функция изменения времени на переданное количество секунд;
+
+                Функция изменения времени на переданное количество минут;
+
+                Функция изменения времени на переданное количество часов.
+
+                Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая.
+                Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не
+                «20:30:75».</h3>
+        </li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
