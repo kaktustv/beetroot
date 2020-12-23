@@ -148,3 +148,76 @@ function fractionDev() {
     const [fractionOne, fractionTwo] = getNum();
     dev(fractionOne.a, fractionOne.b, fractionTwo.a, fractionTwo.b);
 }
+
+//3
+
+const getHours = () => {
+    return +document.getElementById('getHours').value;
+}
+
+const getMinutes = () => {
+    return +document.getElementById('getMinutes').value;
+}
+
+const getSeconds = () => {
+    return +document.getElementById('getSeconds').value;
+}
+
+function getTimes() {
+
+    let times = {
+        hours: getHours(),
+        minutes: getMinutes(),
+        seconds: getSeconds(),
+    }
+
+    return [times];
+}
+
+function showTimes() {
+    const [times] = getTimes();
+
+    addNullTime(outTimes);
+}
+
+function addNullTime(link) {
+    let h = times.hours;
+    let m = times.minutes;
+    let s = times.seconds;
+
+    h <= 9 ? h = `0${h}` : h;
+    m <= 9 ? m = `0${m}` : m;
+    s <= 9 ? s = `0${s}` : s;
+
+    return document.getElementById(`${link}`).innerHTML = `${h}:${m}:${s}`;
+
+}
+
+function inSec(h,m,s) {
+    return (((h * 60) * 60) + (m * 60) + s);
+}
+
+function fromSec(s) {
+    let h = Math.floor(s / 3600);
+    let m = Math.floor(s / 60) - (h * 60);
+    s = s % 60;
+
+    let times = {
+        hours: h,
+        minutes: m,
+        seconds: s,
+    }
+
+    return [times];
+}
+
+function addTimesSec() {
+    [times] = getTimes();
+
+    let s = inSec(times.hours, times.minutes, times.seconds);
+    s += document.getElementById('addSec').value;
+    
+    [times] = fromSec(s);
+
+    addNullTime(addSec);
+}
