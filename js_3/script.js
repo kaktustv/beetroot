@@ -177,10 +177,12 @@ function getTimes() {
 function showTimes() {
     const [times] = getTimes();
 
-    addNullTime(outTimes);
+    addNullTime([times]);
 }
 
-function addNullTime(link) {
+function addNullTime(arr) {
+    let [times] = arr;
+
     let h = times.hours;
     let m = times.minutes;
     let s = times.seconds;
@@ -189,11 +191,16 @@ function addNullTime(link) {
     m <= 9 ? m = `0${m}` : m;
     s <= 9 ? s = `0${s}` : s;
 
-    return document.getElementById(`${link}`).innerHTML = `${h}:${m}:${s}`;
+    return document.getElementById('outTimes').innerHTML = `${h}:${m}:${s}`;
 
 }
 
 function inSec(h,m,s) {
+    if (h >= 24){
+        h = 00;
+    }
+    else {
+    }
     return (((h * 60) * 60) + (m * 60) + s);
 }
 
@@ -211,13 +218,35 @@ function fromSec(s) {
     return [times];
 }
 
-function addTimesSec() {
-    [times] = getTimes();
+function addSec() {
+    let [times] = getTimes();
 
     let s = inSec(times.hours, times.minutes, times.seconds);
-    s += document.getElementById('addSec').value;
+    s += +document.getElementById('addSec').value;
     
     [times] = fromSec(s);
 
-    addNullTime(addSec);
+    addNullTime([times]);
+}
+
+function addMin() {
+    let [times] = getTimes();
+
+    let s = inSec(times.hours, times.minutes, times.seconds);
+    s += (+document.getElementById('addMin').value * 60);
+    
+    [times] = fromSec(s);
+
+    addNullTime([times]);
+}
+
+function addHours() {
+    let [times] = getTimes();
+
+    let s = inSec(times.hours, times.minutes, times.seconds);
+    s += ((+document.getElementById('addHours').value * 60)*60);
+    
+    [times] = fromSec(s);
+
+    addNullTime([times]);
 }
