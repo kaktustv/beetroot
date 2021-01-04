@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 4</title>
+    <style>
+        html {
+            max-width: 500px;
+            margin-top: 50px;
+            margin-left: 100px;
+            font-family: sans-serif;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        input {
+            max-width: 100px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h4>1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название
+                продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким
+                массивом.
+
+                Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.
+                Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом,
+                необходимо увеличивать количество в существующей покупке, а не добавлять новую.
+                Покупка продукта. Функция принимает название продукта и отмечает его как купленный.</h4>
+            <input type="text" id="addItem" placeholder="Название продукта">
+            <input type="number" name="" id="amountItem" placeholder="Его кол-во">
+            <button onclick="showList()">Показать</button>
+            <br>
+            <input type="text" id="buyItem" placeholder="Купленно">
+            <div id="outList"></div>
+        </li>
+        <li>
+            <h4>2. Создать массив, описывающий чек в магазине. Каждый элемент массива состоит из названия товара,
+                количества
+                и цены за единицу товара. Написать следующие функции:
+
+                Распечатка чека на экран;
+                Подсчет общей суммы покупкиck
+                Получение самой дорогой покупки в чеке;
+                Подсчет средней стоимости одного товара в чеке.</h4>
+            <button onclick="showCheck()">Показать</button>
+            <ul id="showCheck"></ul>
+        </li>
+        <li>
+            <h4>3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый элемент
+                массива – это объект, состоящий из двух свойств: название стиля и значение стиля. Написать функцию,
+                которая
+                принимает массив стилей и текст, и выводит этот текст с помощью document.write() в тегах, добавив в
+                открывающий тег атрибут style со всеми стилями, перечисленными в массиве.</h4>
+            <input type="text" id="getText" placeholder="Введите текст">
+            <button onclick="showText()">Ввывести</button>
+        </li>
+        <li>
+            <h4>4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест
+                (от
+                10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с
+                ним^
+
+                Вывод на экран всех аудиторий;
+                Вывод на экран аудиторий для указанного факультета;
+                Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из
+                названия, количества студентов и названия факультета;
+                Функция сортировки аудиторий по количеству мест;
+                Функция сортировки аудиторий по названию (по алфавиту).</h4>
+            <table id="table">
+            </table>
+            <button onclick="showCab()">Показать</button>
+            <br>
+            <select name="cabSelect" id="cabSelect">
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="English">English</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+            <button onclick="showByFac()">По факультету</button>
+            <button onclick="showByPer()">По кол-ву мест</button>
+            <h4>Сортировать по:</h4>
+            <button onclick="sortByPer()">Кол-ву мест</button>
+            <button onclick="sortByFac()">Алфавиту</button>
+        </li>
+    </ul>
+    <script src="1.js"></script>
+    <script src="2.js"></script>
+    <script src="3.js"></script>
+    <script src="4.js"></script>
+</body>
+
+</html>
