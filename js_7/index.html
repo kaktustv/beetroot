@@ -5,34 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS 5</title>
-    <style>
-        html {
-            max-width: 500px;
-            margin-top: 50px;
-            margin-left: 100px;
-            font-family: sans-serif;
-        }
-
-        ul li {
-            list-style-type: none;
-        }
-
-        input {
-            max-width: 100px;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        th {
-            border: 1px solid black;
-        }
-
-        td {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
@@ -42,11 +15,24 @@
             <ul id="playList"></ul>
             <button onclick="firstTask()">Вывести</button>
         </li>
+        <li>
+            <h4>2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и
+                кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется
+                модальное окно, на кнопку "Закрыть" – исчезает. </h4>
+            <div class="pop-up">
+                <h4>Какой-то текст.</h4>
+                <button onclick="secondTaskClose()">Закрыть</button>
+            </div>
+            <button onclick="secondTaskOpen()">Открыть</button>
+        </li>
+        <li>
+            <h4>3. Создать HTML-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет.</h4>
+            <a href="tl.html">Перейти</a>
+        </li>
     </ul>
 
     <script src="js-1.js"></script>
     <script src="js-2.js"></script>
-    <script src="js-3.js"></script>
 </body>
 
 </html>
