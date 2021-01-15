@@ -1,22 +1,27 @@
 <template>
   <div id="app">
-      <p>Count: {{count}}</p>
-      <button @click="count += 1">plus</button>
-      <button @click="count -= 1">minus</button>
-      <button @click="count = 0">reset</button>
+    <ol>
+      <li :v-for="todo in todos" :key="todo.text">
+        {{ todo.text }}
+      </li>
+    </ol>
+  <p>  werwewer  </p>  
   </div>
 </template>
 
 <script>
 export default {
-    name:"Counter",
-    data(){
-        return{
-         count: 0
-        }
-    }
-}
+  data() {
+    return {
+      todos: [
+        { text: "Изучить JavaScript" },
+        { text: "Изучить Vue" },
+        { text: "Создать что-нибудь классное" },
+      ],
+    };
+  },
+};
 </script>
-<style lang="scss">
 
+<style>
 </style>
